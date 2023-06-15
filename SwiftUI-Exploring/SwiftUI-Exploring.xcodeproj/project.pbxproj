@@ -25,6 +25,12 @@
 		8CF289E42A3B0EB10090A9BF /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E32A3B0EB10090A9BF /* View+SafeArea.swift */; };
 		8CF289E72A3B0EE20090A9BF /* MockVerticalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E62A3B0EE20090A9BF /* MockVerticalListView.swift */; };
 		8CF289EA2A3B11540090A9BF /* MockHorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E92A3B11540090A9BF /* MockHorizontalListView.swift */; };
+		8CF289EE2A3B1A3D0090A9BF /* ListAnimationBounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289ED2A3B1A3D0090A9BF /* ListAnimationBounce.swift */; };
+		8CF289F02A3B1C240090A9BF /* View+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289EF2A3B1C240090A9BF /* View+Size.swift */; };
+		8CF289F22A3B1D120090A9BF /* ListAnimationOpacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F12A3B1D120090A9BF /* ListAnimationOpacity.swift */; };
+		8CF289F42A3B1D330090A9BF /* ListAnimationRotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F32A3B1D330090A9BF /* ListAnimationRotationEffect.swift */; };
+		8CF289F62A3B1D660090A9BF /* ListAnimationScaleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F52A3B1D660090A9BF /* ListAnimationScaleEffect.swift */; };
+		8CF289F92A3B1E900090A9BF /* AnimationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F82A3B1E900090A9BF /* AnimationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,12 @@
 		8CF289E32A3B0EB10090A9BF /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
 		8CF289E62A3B0EE20090A9BF /* MockVerticalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVerticalListView.swift; sourceTree = "<group>"; };
 		8CF289E92A3B11540090A9BF /* MockHorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHorizontalListView.swift; sourceTree = "<group>"; };
+		8CF289ED2A3B1A3D0090A9BF /* ListAnimationBounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimationBounce.swift; sourceTree = "<group>"; };
+		8CF289EF2A3B1C240090A9BF /* View+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Size.swift"; sourceTree = "<group>"; };
+		8CF289F12A3B1D120090A9BF /* ListAnimationOpacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimationOpacity.swift; sourceTree = "<group>"; };
+		8CF289F32A3B1D330090A9BF /* ListAnimationRotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimationRotationEffect.swift; sourceTree = "<group>"; };
+		8CF289F52A3B1D660090A9BF /* ListAnimationScaleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimationScaleEffect.swift; sourceTree = "<group>"; };
+		8CF289F82A3B1E900090A9BF /* AnimationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +179,7 @@
 			children = (
 				8CF289D72A3AE1FD0090A9BF /* View+Shadow.swift */,
 				8CF289E32A3B0EB10090A9BF /* View+SafeArea.swift */,
+				8CF289EF2A3B1C240090A9BF /* View+Size.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,11 +230,32 @@
 		8CF289E82A3B0F1B0090A9BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8CF289EC2A3B14E50090A9BF /* Animation */,
 				8CF289E02A3B0E280090A9BF /* StickyFloatingTopView */,
 				8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */,
 				8CF289CF2A3AD7CE0090A9BF /* ColorPicker */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8CF289EC2A3B14E50090A9BF /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289F72A3B1E710090A9BF /* Types */,
+				8CF289F82A3B1E900090A9BF /* AnimationsListView.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		8CF289F72A3B1E710090A9BF /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289ED2A3B1A3D0090A9BF /* ListAnimationBounce.swift */,
+				8CF289F12A3B1D120090A9BF /* ListAnimationOpacity.swift */,
+				8CF289F32A3B1D330090A9BF /* ListAnimationRotationEffect.swift */,
+				8CF289F52A3B1D660090A9BF /* ListAnimationScaleEffect.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF289DC2A3AE6440090A9BF /* ColorPickerView.swift in Sources */,
+				8CF289EE2A3B1A3D0090A9BF /* ListAnimationBounce.swift in Sources */,
 				8CF289D52A3AE1450090A9BF /* ColorView.swift in Sources */,
 				8CF289E72A3B0EE20090A9BF /* MockVerticalListView.swift in Sources */,
 				8CF289D82A3AE1FD0090A9BF /* View+Shadow.swift in Sources */,
@@ -362,11 +397,16 @@
 				8CF289E42A3B0EB10090A9BF /* View+SafeArea.swift in Sources */,
 				8CF289D32A3AE0370090A9BF /* RGB.swift in Sources */,
 				8CF289A62A3AD2B80090A9BF /* ContentView.swift in Sources */,
+				8CF289F42A3B1D330090A9BF /* ListAnimationRotationEffect.swift in Sources */,
+				8CF289F62A3B1D660090A9BF /* ListAnimationScaleEffect.swift in Sources */,
+				8CF289F92A3B1E900090A9BF /* AnimationsListView.swift in Sources */,
 				8CF289D12A3AD8E30090A9BF /* SliderView.swift in Sources */,
+				8CF289F22A3B1D120090A9BF /* ListAnimationOpacity.swift in Sources */,
 				8CF289E22A3B0E4A0090A9BF /* StickyFloatingTopView.swift in Sources */,
 				8CF289AD2A3AD2B90090A9BF /* Item.swift in Sources */,
 				8CF289A42A3AD2B80090A9BF /* SwiftUI_ExploringApp.swift in Sources */,
 				8CF289EA2A3B11540090A9BF /* MockHorizontalListView.swift in Sources */,
+				8CF289F02A3B1C240090A9BF /* View+Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
