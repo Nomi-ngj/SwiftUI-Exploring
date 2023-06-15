@@ -21,6 +21,10 @@
 		8CF289D82A3AE1FD0090A9BF /* View+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289D72A3AE1FD0090A9BF /* View+Shadow.swift */; };
 		8CF289DC2A3AE6440090A9BF /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289DB2A3AE6440090A9BF /* ColorPickerView.swift */; };
 		8CF289DF2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289DE2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift */; };
+		8CF289E22A3B0E4A0090A9BF /* StickyFloatingTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E12A3B0E4A0090A9BF /* StickyFloatingTopView.swift */; };
+		8CF289E42A3B0EB10090A9BF /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E32A3B0EB10090A9BF /* View+SafeArea.swift */; };
+		8CF289E72A3B0EE20090A9BF /* MockVerticalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E62A3B0EE20090A9BF /* MockVerticalListView.swift */; };
+		8CF289EA2A3B11540090A9BF /* MockHorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289E92A3B11540090A9BF /* MockHorizontalListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		8CF289D72A3AE1FD0090A9BF /* View+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shadow.swift"; sourceTree = "<group>"; };
 		8CF289DB2A3AE6440090A9BF /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		8CF289DE2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarTitleMenu.swift; sourceTree = "<group>"; };
+		8CF289E12A3B0E4A0090A9BF /* StickyFloatingTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyFloatingTopView.swift; sourceTree = "<group>"; };
+		8CF289E32A3B0EB10090A9BF /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
+		8CF289E62A3B0EE20090A9BF /* MockVerticalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVerticalListView.swift; sourceTree = "<group>"; };
+		8CF289E92A3B11540090A9BF /* MockHorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHorizontalListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +116,9 @@
 		8CF289A22A3AD2B80090A9BF /* SwiftUI-Exploring */ = {
 			isa = PBXGroup;
 			children = (
-				8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */,
+				8CF289E82A3B0F1B0090A9BF /* Views */,
+				8CF289E52A3B0ED70090A9BF /* Mocks */,
 				8CF289D62A3AE1EB0090A9BF /* Extensions */,
-				8CF289CF2A3AD7CE0090A9BF /* ColorPicker */,
 				8CF289A32A3AD2B80090A9BF /* SwiftUI_ExploringApp.swift */,
 				8CF289A52A3AD2B80090A9BF /* ContentView.swift */,
 				8CF289A72A3AD2B90090A9BF /* Assets.xcassets */,
@@ -158,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF289D72A3AE1FD0090A9BF /* View+Shadow.swift */,
+				8CF289E32A3B0EB10090A9BF /* View+SafeArea.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +195,33 @@
 				8CF289DE2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift */,
 			);
 			path = ToolBarTitleMenu;
+			sourceTree = "<group>";
+		};
+		8CF289E02A3B0E280090A9BF /* StickyFloatingTopView */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289E12A3B0E4A0090A9BF /* StickyFloatingTopView.swift */,
+			);
+			path = StickyFloatingTopView;
+			sourceTree = "<group>";
+		};
+		8CF289E52A3B0ED70090A9BF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289E62A3B0EE20090A9BF /* MockVerticalListView.swift */,
+				8CF289E92A3B11540090A9BF /* MockHorizontalListView.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8CF289E82A3B0F1B0090A9BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289E02A3B0E280090A9BF /* StickyFloatingTopView */,
+				8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */,
+				8CF289CF2A3AD7CE0090A9BF /* ColorPicker */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,13 +356,17 @@
 			files = (
 				8CF289DC2A3AE6440090A9BF /* ColorPickerView.swift in Sources */,
 				8CF289D52A3AE1450090A9BF /* ColorView.swift in Sources */,
+				8CF289E72A3B0EE20090A9BF /* MockVerticalListView.swift in Sources */,
 				8CF289D82A3AE1FD0090A9BF /* View+Shadow.swift in Sources */,
 				8CF289DF2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift in Sources */,
+				8CF289E42A3B0EB10090A9BF /* View+SafeArea.swift in Sources */,
 				8CF289D32A3AE0370090A9BF /* RGB.swift in Sources */,
 				8CF289A62A3AD2B80090A9BF /* ContentView.swift in Sources */,
 				8CF289D12A3AD8E30090A9BF /* SliderView.swift in Sources */,
+				8CF289E22A3B0E4A0090A9BF /* StickyFloatingTopView.swift in Sources */,
 				8CF289AD2A3AD2B90090A9BF /* Item.swift in Sources */,
 				8CF289A42A3AD2B80090A9BF /* SwiftUI_ExploringApp.swift in Sources */,
+				8CF289EA2A3B11540090A9BF /* MockHorizontalListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
