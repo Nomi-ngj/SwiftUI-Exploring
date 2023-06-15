@@ -13,7 +13,7 @@ struct SwiftUI_ExploringApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ColorPickerView()
+            NetworkView()
         }
         .modelContainer(for: Item.self)
     }

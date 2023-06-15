@@ -31,6 +31,8 @@
 		8CF289F42A3B1D330090A9BF /* ListAnimationRotationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F32A3B1D330090A9BF /* ListAnimationRotationEffect.swift */; };
 		8CF289F62A3B1D660090A9BF /* ListAnimationScaleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F52A3B1D660090A9BF /* ListAnimationScaleEffect.swift */; };
 		8CF289F92A3B1E900090A9BF /* AnimationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289F82A3B1E900090A9BF /* AnimationsListView.swift */; };
+		8CF289FD2A3B243D0090A9BF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289FC2A3B243D0090A9BF /* NetworkReachabilityManager.swift */; };
+		8CF28A012A3B39DE0090A9BF /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF28A002A3B39DE0090A9BF /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		8CF289F32A3B1D330090A9BF /* ListAnimationRotationEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimationRotationEffect.swift; sourceTree = "<group>"; };
 		8CF289F52A3B1D660090A9BF /* ListAnimationScaleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAnimationScaleEffect.swift; sourceTree = "<group>"; };
 		8CF289F82A3B1E900090A9BF /* AnimationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsListView.swift; sourceTree = "<group>"; };
+		8CF289FC2A3B243D0090A9BF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		8CF28A002A3B39DE0090A9BF /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,10 +234,7 @@
 		8CF289E82A3B0F1B0090A9BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8CF289EC2A3B14E50090A9BF /* Animation */,
-				8CF289E02A3B0E280090A9BF /* StickyFloatingTopView */,
-				8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */,
-				8CF289CF2A3AD7CE0090A9BF /* ColorPicker */,
+				8CF289FE2A3B39C70090A9BF /* Menu */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +257,43 @@
 				8CF289F52A3B1D660090A9BF /* ListAnimationScaleEffect.swift */,
 			);
 			path = Types;
+			sourceTree = "<group>";
+		};
+		8CF289FA2A3B22F20090A9BF /* GenericView */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289FB2A3B242C0090A9BF /* NetworkReachabilityManager */,
+			);
+			path = GenericView;
+			sourceTree = "<group>";
+		};
+		8CF289FB2A3B242C0090A9BF /* NetworkReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289FC2A3B243D0090A9BF /* NetworkReachabilityManager.swift */,
+			);
+			path = NetworkReachabilityManager;
+			sourceTree = "<group>";
+		};
+		8CF289FE2A3B39C70090A9BF /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289FF2A3B39CF0090A9BF /* Views */,
+				8CF28A002A3B39DE0090A9BF /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		8CF289FF2A3B39CF0090A9BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289FA2A3B22F20090A9BF /* GenericView */,
+				8CF289EC2A3B14E50090A9BF /* Animation */,
+				8CF289E02A3B0E280090A9BF /* StickyFloatingTopView */,
+				8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */,
+				8CF289CF2A3AD7CE0090A9BF /* ColorPicker */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,9 +433,11 @@
 				8CF289D82A3AE1FD0090A9BF /* View+Shadow.swift in Sources */,
 				8CF289DF2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift in Sources */,
 				8CF289E42A3B0EB10090A9BF /* View+SafeArea.swift in Sources */,
+				8CF28A012A3B39DE0090A9BF /* MenuView.swift in Sources */,
 				8CF289D32A3AE0370090A9BF /* RGB.swift in Sources */,
 				8CF289A62A3AD2B80090A9BF /* ContentView.swift in Sources */,
 				8CF289F42A3B1D330090A9BF /* ListAnimationRotationEffect.swift in Sources */,
+				8CF289FD2A3B243D0090A9BF /* NetworkReachabilityManager.swift in Sources */,
 				8CF289F62A3B1D660090A9BF /* ListAnimationScaleEffect.swift in Sources */,
 				8CF289F92A3B1E900090A9BF /* AnimationsListView.swift in Sources */,
 				8CF289D12A3AD8E30090A9BF /* SliderView.swift in Sources */,

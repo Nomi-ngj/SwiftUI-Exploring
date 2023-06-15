@@ -23,19 +23,19 @@ struct MockVerticalListView: View {
                     }
                     
                     
-//                    VStack(alignment: .leading, spacing: 6, content: {
-//                        RoundedRectangle(cornerRadius: 4)
-//                            .fill(Color.gray.opacity(0.5))
-//                            .frame(height: 22)
-//                        RoundedRectangle(cornerRadius: 4)
-//                            .fill(Color.gray.opacity(0.5))
-//                            .frame(height: 22)
-//                            .padding(.trailing, 80)
-//                        RoundedRectangle(cornerRadius: 4)
-//                            .fill(Color.gray.opacity(0.5))
-//                            .frame(height: 22)
-//                            .padding(.trailing, 160)
-//                    })
+                    VStack(alignment: .leading, spacing: 6, content: {
+                        RoundedRectangle(cornerRadius: 4)
+                            .fill(Color.gray.opacity(0.5))
+                            .frame(height: 22)
+                        RoundedRectangle(cornerRadius: 4)
+                            .fill(Color.gray.opacity(0.5))
+                            .frame(height: 22)
+                            .padding(.trailing, 80)
+                        RoundedRectangle(cornerRadius: 4)
+                            .fill(Color.gray.opacity(0.5))
+                            .frame(height: 22)
+                            .padding(.trailing, 160)
+                    })
                 }
             }
         }.padding()
