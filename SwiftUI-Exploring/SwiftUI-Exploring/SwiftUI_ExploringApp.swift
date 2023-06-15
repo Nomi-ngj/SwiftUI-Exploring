@@ -13,7 +13,7 @@ struct SwiftUI_ExploringApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NetworkView()
+            MenuView()
         }
         .modelContainer(for: Item.self)
     }

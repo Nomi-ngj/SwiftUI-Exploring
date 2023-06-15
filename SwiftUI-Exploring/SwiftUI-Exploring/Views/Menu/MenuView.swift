@@ -26,7 +26,7 @@ enum MenuViewType:CaseIterable{
     }
 }
 struct MenuView: View{
-    
+    @State var color = RGB()
     var body: some View {
            NavigationView {
                List(MenuViewType.allCases, id: \.self) { type in
@@ -38,10 +38,22 @@ struct MenuView: View{
                        }
                    case .colorPicker:
                        
-                       NavigationLink(destination: ColorPickerView{ rgb in
+                       NavigationLink(destination: ColorPickerView(guess: color){ rgb in
                            debugPrint(rgb)
+                           color = rgb
+                           
                        }) {
-                           Text(type.name())
+                           HStack{
+                               Text(type.name())
+                               Spacer()
+                               Circle()
+                                   .background(color.getColor())
+                                   .foregroundColor(color.getColor())
+                                   .cornerRadius(8)
+                                   .frame(height: 30)
+                           }
+                           
+                           
                        }
                        
                    case .toolbarTitleMenu:

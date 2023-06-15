@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ColorPickerView: View {
-    
+    @Environment(\.presentationMode) var presentationMode
+
     @State var guess: RGB = RGB()
     var onRGBChange: ((RGB) -> Void)? // Callback function
 
@@ -23,6 +24,7 @@ struct ColorPickerView: View {
             }.padding(10)
             Button(action: {
                 onRGBChange?(guess)
+                presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Pick Color") // Button label
                     .font(.headline)
