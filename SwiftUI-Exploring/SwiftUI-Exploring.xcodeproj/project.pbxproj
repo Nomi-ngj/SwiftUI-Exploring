@@ -20,6 +20,7 @@
 		8CF289D52A3AE1450090A9BF /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289D42A3AE1450090A9BF /* ColorView.swift */; };
 		8CF289D82A3AE1FD0090A9BF /* View+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289D72A3AE1FD0090A9BF /* View+Shadow.swift */; };
 		8CF289DC2A3AE6440090A9BF /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289DB2A3AE6440090A9BF /* ColorPickerView.swift */; };
+		8CF289DF2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF289DE2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		8CF289D42A3AE1450090A9BF /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		8CF289D72A3AE1FD0090A9BF /* View+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shadow.swift"; sourceTree = "<group>"; };
 		8CF289DB2A3AE6440090A9BF /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		8CF289DE2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarTitleMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		8CF289A22A3AD2B80090A9BF /* SwiftUI-Exploring */ = {
 			isa = PBXGroup;
 			children = (
+				8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */,
 				8CF289D62A3AE1EB0090A9BF /* Extensions */,
 				8CF289CF2A3AD7CE0090A9BF /* ColorPicker */,
 				8CF289A32A3AD2B80090A9BF /* SwiftUI_ExploringApp.swift */,
@@ -175,6 +178,14 @@
 				8CF289D22A3AE0370090A9BF /* RGB.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8CF289DD2A3B0BDF0090A9BF /* ToolBarTitleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8CF289DE2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift */,
+			);
+			path = ToolBarTitleMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 				8CF289DC2A3AE6440090A9BF /* ColorPickerView.swift in Sources */,
 				8CF289D52A3AE1450090A9BF /* ColorView.swift in Sources */,
 				8CF289D82A3AE1FD0090A9BF /* View+Shadow.swift in Sources */,
+				8CF289DF2A3B0BFF0090A9BF /* ToolBarTitleMenu.swift in Sources */,
 				8CF289D32A3AE0370090A9BF /* RGB.swift in Sources */,
 				8CF289A62A3AD2B80090A9BF /* ContentView.swift in Sources */,
 				8CF289D12A3AD8E30090A9BF /* SliderView.swift in Sources */,
