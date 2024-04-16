@@ -10,20 +10,18 @@ import SwiftUI
 struct ToolBarTitleMenu: View {
     @State private var title = "Selected Title 0"
     var body: some View {
-        NavigationStack{
-            Text("Nouman Gul Junejo")
-                .navigationTitle($title)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbarTitleMenu {
-                    ForEach(0..<8) { index in
-                        Button {
-                            title = "Selected Title \(index)"
-                        } label: {
-                            Text("Title \(index)")
+        Text("Nouman Gul Junejo")
+            .navigationTitle($title)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarTitleMenu {
+                ForEach(0..<8) { index in
+                    Button {
+                        title = "Selected Title \(index)"
+                    } label: {
+                        Text("Title \(index)")
                     }
                 }
             }
-        }
     }
 }
 

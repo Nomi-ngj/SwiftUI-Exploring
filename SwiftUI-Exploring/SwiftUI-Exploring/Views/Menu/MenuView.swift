@@ -21,7 +21,7 @@ enum MenuViewType:CaseIterable{
         case .animation:
             return "Animations"
         case .genericViews:
-            return "Generic Views"
+            return "Generic Views Animations"
         }
     }
 }
